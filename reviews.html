@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="./reviews.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="box">
+        <div class="reviews">
+            <div class="col-md-12 mb-2 p-2 bg-info text-white">
+                <h5 class="mb-0 process__title">Đánh giá học viên</h5>
+            </div>
+            <h5 class="text-uppercase font-weight-bold word-break text-muted my-4 ">
+                Đánh giá chi tiết
+            </h5>
+            <ul id="comments-list" class="comments-list">
+                <li id="note_9">
+                    <div class="comment-main-level">
+                        <div class="comment-avatar"><img src="./1.png" alt=""></div>
+                        <div class="comment-box">
+                            <div class="comment-head">
+                                <h6 class="comment-name">
+                                    Trainer
+                                    <div class="badge badge-warning">Không công khai</div>
+                                </h6>
+                                <span data-toggle="tooltip" data-title="19-06-2020" data-original-title="" title="">
+                                    26 phút
+                                </span>
+                                <a data-toggle="tooltip" data-title="Chỉnh sửa" data-remote="true"
+                                    href="/notes/9/edit?course_id=19" data-original-title="" title="">
+                                    <i class="fa fa-edit mr-2"></i>
+                                </a>
+                            </div>
+                            <div class="comment-content">
+                                <p>tot</p>
+                                <div class="action-edit text-right">
+                                    <label class="custom-control material-switch d-inline-block">
+                                        <span class="material-switch-control-description">
+                                            <small>Công khai</small>
+                                        </span>
+                                        <input type="checkbox" name="public_note" id="public_note" value="9"
+                                            class="material-switch-control-input"
+                                            data-content="Nếu chuyển sang trạng thái công khai, học viên sẽ nhìn ghi chú này."
+                                            data-path-update="/notes/9?course_id=19&amp;type=change_status">
+                                        <span class="material-switch-control-indicator"></span>
+                                    </label>
+                                    <button class="btn btn-danger-outline btn-sm btn-oval js-delete-note"
+                                        data-path="/notes/9?course_id=19">
+                                        <small>
+                                            <i class="fa fa-trash text-white mr-1 text-danger"></i>
+                                            Xóa
+                                        </small>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li id="note_8">
+                    <div class="comment-main-level">
+                        <div class="comment-avatar"><img src="./1.png" alt=""></div>
+                        <div class="comment-box">
+                            <div class="comment-head">
+                                <h6 class="comment-name">
+                                    Trainer
+                                    <div class="badge badge-warning">Không công khai</div>
+                                </h6>
+                                <span data-toggle="tooltip" data-title="19-06-2020" data-original-title="" title="">
+                                    27 phút
+                                </span>
+                                <a data-toggle="tooltip" data-title="Chỉnh sửa" data-remote="true"
+                                    href="/notes/8/edit?course_id=19" data-original-title="" title="">
+                                    <i class="fa fa-edit mr-2"></i>
+                                </a>
+                            </div>
+                            <div class="comment-content">
+                                <p>tot</p>
+                                <div class="action-edit text-right">
+                                    <label class="custom-control material-switch d-inline-block">
+                                        <span class="material-switch-control-description">
+                                            <small>Công khai</small>
+                                        </span>
+                                        <input type="checkbox" name="public_note" id="public_note" value="8"
+                                            class="material-switch-control-input"
+                                            data-content="Nếu chuyển sang trạng thái công khai, học viên sẽ nhìn ghi chú này."
+                                            data-path-update="/notes/8?course_id=19&amp;type=change_status">
+                                        <span class="material-switch-control-indicator"></span>
+                                    </label>
+                                    <button class="btn btn-danger-outline btn-sm btn-oval js-delete-note"
+                                        data-path="/notes/8?course_id=19">
+                                        <small>
+                                            <i class="fa fa-trash text-white mr-1 text-danger"></i>
+                                            Xóa
+                                        </small>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments my-3 clearfix">
+                    </div>
+                    <div class="comments my-3 clearfix">
+                    </div>
+                </li>
+            </ul>
+            <button type="button" data-toggle="collapse" data-target="#add-form-note" class="btn btn-primary btn-oval btn-sm js-button-note  px-4 py-2">
+                <i class="fa fa-plus"></i>
+                Thêm ghi chú
+            </button>
+            <div class="collapse " id="add-form-note">
+                <div class="comments my-3 clearfix">
+                    <form class="new_note" id="new_note" action="/notes?course_id=19" accept-charset="UTF-8"
+                        data-remote="true" method="post">
+                        <div class="comment-wrap">
+                            <div class="photo">
+                                <div class="avatar"
+                                    style="background-image: url('/1.png')">
+                                </div>
+                            </div>
+                            <input value="19" type="hidden" name="note[course_id]" id="note_course_id">
+                            <input value="2" type="hidden" name="note[user_id]" id="note_user_id">
+                            <input value="111" type="hidden" name="note[course_subject_user_id]"
+                                id="note_course_subject_user_id">
+                            <div class="comment-block shadow-sm border">
+                                <textarea rows="3" placeholder="Thêm ghi ghú..." name="note[content]"
+                                    id="note_content"></textarea>
+                            </div>
+                        </div>
+                        <div class="float-right js-new_note" id="button-note">
+                            <button name="button" type="submit" class="btn btn-primary btn-oval btn-sm js-button-note">
+                                <i class="fa fa-plus"></i>
+                                Lưu
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>

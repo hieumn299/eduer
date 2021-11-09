@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link href="./scss/reset.css" rel="stylesheet" />
+    <link href="./scss/styles.css" rel="stylesheet" />
+  </head>
+  <body class="background-smoke">
+    <div class="evaluate-tab px-5 py-4">
+      <div class="evaluate-tab__title">
+        <h3 class="h3 font-weight-bold text-center">Tab đánh giá</h3>
+      </div>
+      <div class="evaluate-tab__header background-silver p-2">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="trainer__name">
+            <span class="fs-18 font-weight-bold">Vũ Thị Trần Vân</span>
+          </div>
+          <div class="evaluate-tab__action">
+            <button class="btn-icon btn-dangerous">
+              <i class="fas fa-trash-alt"></i>
+            </button>
+          </div>
+        </div>
+        <div class="evaluate-time mt-2">
+          <label>Thời gian:</label>
+          <span class="fs-13">Khoảng 2 ngày trước</span>
+        </div>
+      </div>
+      <div class="evaluate-tab__content px-3 pt-0 pb-3">
+        <div class="evaluate-tab__list pt-3">
+          <div class="evaluate-tab__item">
+            <div class="tab-item__header text-center font-weight-bold fs-18">
+              <span class="bg-white">Backend Assessment Form</span>
+            </div>
+            <div class="tab-item__body bg-white p-4">
+              <form>
+                <div class="form-group pb-3">
+                  <div class="row">
+                    <label
+                      for="tab-item__total"
+                      class="font-weight-bold fs-18 col-sm-2 col-form-label"
+                      >Total:</label
+                    >
+                    <div class="col-sm-10">
+                      <div
+                        class="d-flex align-items-center justify-content-start"
+                      >
+                        <input
+                          type="text"
+                          class="form-control maxw-60 mr-3"
+                          id="tab-item__total"
+                          value="40"
+                        />
+                        <a class="btn-icon fs-18 mr-2 btn-infomation" href="#">
+                          <i class="far fa-eye"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group pb-3">
+                  <div class="row">
+                    <label
+                      for="general-assessment"
+                      class="font-weight-bold fs-18 col-sm-12 col-form-label"
+                      >Đánh giá chung:</label
+                    >
+                    <div class="col-sm-12">
+                      <div class="px-3 spacing">
+                        <textarea
+                          id="general-assessment"
+                          cols="12"
+                          rows="4"
+                          class="form-control"
+                        >
+                        </textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="evaluate-tab__item mt-4">
+            <div class="tab-item__header text-center font-weight-bold fs-18">
+              <span class="bg-white">Backend Assessment Form</span>
+            </div>
+            <div class="tab-item__body bg-white p-4">
+              <form>
+                <div class="form-group pb-3">
+                  <div class="row">
+                    <label
+                      for="assessmentSubject"
+                      class="font-weight-bold fs-18 col-sm-12 col-form-label"
+                      >Đánh giá theo subject:</label
+                    >
+                    <div class="col-sm-12">
+                      <div class="px-3 spacing">
+                        <textarea
+                          id="assessmentSubject"
+                          cols="12"
+                          rows="4"
+                          class="form-control"
+                        >
+                        </textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group pb-3">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="d-flex align-items-center">
+                        <label
+                          for="assessmentGeneral"
+                          class="font-weight-bold fs-18 col-form-label"
+                          >Đánh giá chung:</label
+                        >
+                        <button class="btn-icon btn-warn ml-3">
+                          <i class="fas fa-edit"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="px-3 spacing">
+                        <textarea
+                          id="assessmentGeneral"
+                          cols="12"
+                          rows="4"
+                          class="form-control"
+                        >
+                        </textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group pb-3">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="d-flex align-items-center">
+                        <label
+                          for="infoProject"
+                          class="font-weight-bold fs-18 col-form-label"
+                          >Thông tin project:</label
+                        >
+                        <button class="btn-icon btn-warn ml-3">
+                          <i class="fas fa-edit"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="px-3 spacing">
+                        <textarea
+                          id="infoProject"
+                          cols="12"
+                          rows="4"
+                          class="form-control"
+                        >
+                        </textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="evaluate-tab__footer p-3">
+        <div class="d-flex align-items-center justify-content-end">
+          <button
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#form-evaluate--add"
+          >
+            <div class="d-flex align-items-center">
+              <i class="fas fa-plus mr-2"></i>
+              <span class="fs-13">Thêm đánh giá</span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- modal -->
+    <div
+      class="modal fade"
+      id="form-evaluate--add"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="ModalEvaluate"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <form class="p-3">
+              <div class="form-group row pb-3">
+                <label
+                  for="userAssessment"
+                  class="col-sm-6 col-form-label font-weight-bold"
+                  >Form đối tượng đánh giá
+                </label>
+                <div class="col-sm-6">
+                  <select id="userAssessment" class="form-control">
+                    <option selected>Back End Assessment</option>
+                    <option>...</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row pb-3">
+                <label
+                  for="traineeCourse"
+                  class="col-sm-6 col-form-label font-weight-bold"
+                  >Khoá học Trainee tham gia
+                </label>
+                <div class="col-sm-6">
+                  <select id="traineeCourse" class="form-control">
+                    <option selected>DN_OE51_RUBY</option>
+                    <option>...</option>
+                  </select>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary">Tạo Form</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+</html>

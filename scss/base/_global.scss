@@ -1,0 +1,57 @@
+// text
+.fs-13 {
+  font-size: 13px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+// layout
+.minw-600 {
+  min-width: 600px;
+}
+
+.maxw-60 {
+  max-width: 60px;
+}
+
+.maxw-100 {
+  max-width: 100px;
+}
+
+// border
+.border-dashed-bottom {
+  border-bottom: dashed 1px $black-color;
+}
+
+.border-solid-bottom {
+  border-bottom: solid 1px $black-color;
+}
+
+.border-weight {
+  border-width: 3px;
+}
+
+// over-flow
+.overflow-hidden {
+  overflow: hidden;
+}
+
+// background
+.background-smoke {
+  background-color: $white-smoke-color;
+}
+
+.background-silver {
+  background-color: $silver-color;
+}
+
+// z-index
+.z3 {
+  z-index: 3;
+}

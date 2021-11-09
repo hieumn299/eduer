@@ -1,0 +1,21 @@
+html {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+// remove border button
+button:focus {
+    outline: none;
+}
+
+// delete icon select form
+select.form-control {
+    appearance: none;
+}

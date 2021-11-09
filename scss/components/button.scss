@@ -1,0 +1,98 @@
+.btn-icon {
+    padding: 3px;
+    border: none;
+    font-size: 18px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn-default {
+    color: $black-color;
+}
+
+.btn-infomation {
+    color: $light-blue-color;
+}
+
+.btn-dangerous {
+    color: $light-red-color;
+}
+
+.btn-warn {
+    color: $dark-orange-color;
+}
+
+// switch control
+.custom-control {
+    &.material-checkbox {
+        .material-control-input {
+            display: none;
+            &:checked ~ .material-control-indicator {
+                border-color: $green-neon-color;
+                transform: rotateZ(45deg) translate(1px, -5px);
+                width: 10px;
+                border-top: 0px solid $white-color;
+                border-left: 0px solid $white-color;
+            }
+        }
+        .material-control-indicator {
+            display: inline-block;
+            position: absolute;
+            top: 4px;
+            left: 0;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #aaa;
+            transition: 0.3s;
+        }
+    }
+
+    &.material-switch {
+        padding-left: 0;
+        .material-switch-control-input {
+            display: none;
+            &:checked ~ .material-switch-control-indicator::after {
+                background-color: $green-neon-color;
+                left: 17px;
+            }
+        }
+        .material-switch-control-indicator {
+            display: inline-block;
+            position: relative;
+            margin: 0 10px;
+            top: 4px;
+            width: 32px;
+            height: 16px;
+            background: $dark-gray-color;
+            border-radius: 16px;
+            transition: 0.3s;
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                transition: 0.3s;
+                top: -1px;
+                left: -1px;
+                background: $white-color;
+                box-shadow: 0 2px 10px $dark-gray-color;
+            }
+        }
+    }
+}
+
+.custom-control.material-switch {
+    .material-switch-control-indicator {
+        display: inline-block;
+        position: relative;
+        margin: 0 10px;
+        top: 4px;
+        width: 32px;
+        height: 16px;
+        background: #ddd;
+        border-radius: 16px;
+        transition: 0.3s;
+    }
+}
